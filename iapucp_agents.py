@@ -280,8 +280,8 @@ class my_ML_Agent(Agent):
         #accionNum = int(self.modelo.predict(X))
         probas = self.modelo.predict_proba(X)[0] #obtenemos el arreglo con la probabilidad por acción
         accionList = np.flip(np.argsort(probas)) #ordenamos los índices de mayor a menor
-        print(f'acciones {accionList}')
-        maxStops = 10 # colocamos un tope a los stops seguidos
+        #print(f'acciones {accionList}')
+        maxStops = 5 # colocamos un tope a los stops seguidos
 
         #Si es un keras sequential
         #accionNum = self.modelo.predict(features).argmax(axis=-1)
@@ -307,7 +307,8 @@ class my_ML_Agent(Agent):
                 if(self.stops_seguidos > maxStops):
                     continue
 
-                print(f'elegida {accionNum}')
+                #print(f'elegida {accionNum} {">>>>>>>>>>>>>>>" if accionNum != accionList[0] else ""}')
+
                 break
 
         return movelist[accionNum]
