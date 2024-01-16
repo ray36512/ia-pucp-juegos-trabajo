@@ -1,4 +1,6 @@
 data/datosRecolectadosTotal.csv filter=lfs diff=lfs merge=lfs -text
+data/datosRecolectadosTotal-full.csv filter=lfs diff=lfs merge=lfs -text
+data/datosRecolectadosTotal-miguel.csv filter=lfs diff=lfs merge=lfs -text
 pickle/modeloEntrenado.p filter=lfs diff=lfs merge=lfs -text
 pickle/modeloEntrenado-miguel.p filter=lfs diff=lfs merge=lfs -text
-data/datosRecolectadosTotal-miguel.csv filter=lfs diff=lfs merge=lfs -text
+pickle/modeloEntrenado-full.p filter=lfs diff=lfs merge=lfs -text
